@@ -2,33 +2,45 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiFinance.MainPage">
+    <ContentPage.BackgroundColor>#1A1A1A</ContentPage.BackgroundColor>
 
     <ScrollView>
         <VerticalStackLayout
             Padding="30,0"
             Spacing="25">
-			<Image
+
+            <Label Style="{StaticResource Headline}" SemanticProperties.HeadingLevel="Level1" TextColor="White">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Tere tulemast" FontSize="30" TextColor="White" FontAttributes="Bold"/>
+                        <Span Text="&#10;Finants app" FontSize="20" TextColor="White" LineHeight="8.5"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Image
                 Source="mainpage.png"
-                HeightRequest="185"
+                HeightRequest="350"
                 Aspect="AspectFit"></Image>
 
-            <Label
-                Text="Tere tulemast!"
-                Style="{StaticResource Headline}"
-                SemanticProperties.HeadingLevel="Level1" />
+
 
             <Label
-                Text="Finants app - Lihtne viis säästa!"
+                Text="Lihtne viis säästa raha!"
                 Style="{StaticResource SubHeadline}"
                 SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
+                TextColor="White"
+                FontSize="20"/>
+
 
             <Button
-                x:Name="CounterBtn"
-                Text="Click me" 
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Fill" />
+                x:Name="NavigateBtn"
+                Text="Sisene" 
+                SemanticProperties.Hint="Navigate to the next page"
+                Clicked="OnNavigateClicked"
+                HorizontalOptions="Fill"
+                TextColor="White"
+                BackgroundColor="Gray"/>
         </VerticalStackLayout>
     </ScrollView>
 
