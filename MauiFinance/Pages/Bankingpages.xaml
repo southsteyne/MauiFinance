@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Pages.Bankingpages">
+             x:Class="Pages.Bankingpages"
+             BackgroundColor="Black">
 
     <VerticalStackLayout Padding="30" Spacing="30">
             <Label
@@ -10,23 +11,30 @@
             HorizontalOptions="Center"
             TextColor="White" />
 
-            <!-- Sisestamiseks tulude ja kulude väljad -->
+
+            <Image
+                Source="https://e7.pngegg.com/pngimages/94/517/png-clipart-money-bag-emoji-fly-angle-rectangle.png"
+                HorizontalOptions="Center"
+                WidthRequest="150"
+                HeightRequest="150" />
+
+        <!-- Sisestamiseks tulude ja kulude väljad -->
             <Entry x:Name="IncomeEntry" 
                Placeholder="Sisesta tulud" 
                Keyboard="Numeric" 
                TextColor="White" 
-               BackgroundColor="Blue" />
+               BackgroundColor="Gray" />
 
             <Entry x:Name="ExpenseEntry" 
                Placeholder="Sisesta kulud" 
                Keyboard="Numeric" 
                TextColor="White" 
-               BackgroundColor="Blue" />
+               BackgroundColor="Gray" />
 
             <!-- Arvutamise nupp -->
             <Button
             Text="Arvuta saldo"
-            BackgroundColor="Blue"
+            BackgroundColor="Gray"
             TextColor="White"
             Clicked="OnCalculateBalanceClicked" />
 
@@ -40,3 +48,6 @@
         </VerticalStackLayout>
 
 </ContentPage>
+
+    
+    
