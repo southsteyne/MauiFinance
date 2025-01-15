@@ -1,4 +1,6 @@
-﻿namespace MauiFinance
+﻿using Pages;
+
+namespace MauiFinance
 {
     public partial class App : Application
     {
@@ -6,7 +8,7 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new Bankingpages();
         }
     }
 }
