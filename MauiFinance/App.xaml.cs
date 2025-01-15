@@ -1,17 +1,4 @@
-﻿using Pages;
-<<<<<<< HEAD
-
-namespace MauiFinance;
-
-public partial class App : Application
-{
-    public App()
-    {
-        InitializeComponent();
-        MainPage = new FinalPage();
-=======
-
-namespace MauiFinance
+﻿namespace MauiFinance
 {
     public partial class App : Application
     {
@@ -19,8 +6,7 @@ namespace MauiFinance
         {
             InitializeComponent();
 
-            MainPage = new Bankingpages();
+            MainPage = new AppShell();
         }
->>>>>>> master
     }
 }
