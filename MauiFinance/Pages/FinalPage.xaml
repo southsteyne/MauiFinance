@@ -1,12 +1,149 @@
-<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Pages.FinalPage"
-             Title="FinalPage">
-    <VerticalStackLayout>
+             Title="Korduma Kippuvad Küsimused (FAQ)">
+    <ContentPage.BackgroundColor>#1A1A1A</ContentPage.BackgroundColor>
+
+    <VerticalStackLayout Padding="20" Spacing="15">
+
+        <!-- Pealkiri -->
         <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
+            Text="Korduma Kippuvad Küsimused (FAQ)" 
+            FontSize="26" 
+            FontAttributes="Bold" 
+            TextColor="White" 
             HorizontalOptions="Center" />
+
+        <!-- Küsimused ja vastused koos rahaga pildiga vasakul -->
+        <Frame CornerRadius="10" Padding="10" BackgroundColor="Black">
+            <HorizontalStackLayout>
+                <Image Source="money.png"
+                       HeightRequest="50"
+                       WidthRequest="50"
+                       Margin="0,0,10,0" />
+                <VerticalStackLayout>
+                    <Label 
+                        Text="Kuidas muuta oma parooli?" 
+                        FontSize="20" 
+                        FontAttributes="Bold" 
+                        TextColor="White" />
+                    <Label 
+                        Text="Vali 'Seaded' menüüst ja klõpsa 'Muuda parool'. Järgi juhiseid uue parooli loomiseks." 
+                        FontSize="16" 
+                        TextColor="#B0B0B0" />
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+        </Frame>
+
+        <Frame CornerRadius="10" Padding="10" BackgroundColor="Black">
+            <HorizontalStackLayout>
+                <Image Source="money.png"
+                       HeightRequest="50"
+                       WidthRequest="50"
+                       Margin="0,0,10,0" />
+                <VerticalStackLayout>
+                    <Label 
+                        Text="Kuidas lisada uus tehing?" 
+                        FontSize="20" 
+                        FontAttributes="Bold" 
+                        TextColor="White" />
+                    <Label 
+                        Text="Mine avalehele ja klõpsa nupule 'Lisa tehing'. Sisesta vajalik info ja salvesta." 
+                        FontSize="16" 
+                        TextColor="#B0B0B0" />
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+        </Frame>
+
+        <Frame CornerRadius="10" Padding="10" BackgroundColor="Black">
+            <HorizontalStackLayout>
+                <Image Source="money.png"
+                       HeightRequest="50"
+                       WidthRequest="50"
+                       Margin="0,0,10,0" />
+                <VerticalStackLayout>
+                    <Label 
+                        Text="Miks ei ole minu konto sünkroonitud?" 
+                        FontSize="20" 
+                        FontAttributes="Bold" 
+                        TextColor="White" />
+                    <Label 
+                        Text="Kontrolli, kas oled internetiga ühendatud. Kui probleem püsib, proovi rakendust taaskäivitada." 
+                        FontSize="16" 
+                        TextColor="#B0B0B0" />
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+        </Frame>
+
+        <Frame CornerRadius="10" Padding="10" BackgroundColor="Black">
+            <HorizontalStackLayout>
+                <Image Source="money.png"
+                       HeightRequest="50"
+                       WidthRequest="50"
+                       Margin="0,0,10,0" />
+                <VerticalStackLayout>
+                    <Label 
+                        Text="Kuidas kontrollida oma konto saldot?" 
+                        FontSize="20" 
+                        FontAttributes="Bold" 
+                        TextColor="White" />
+                    <Label 
+                        Text="Mine 'Minu konto' sektsiooni ja vali 'Saldokontroll'. Seal näed oma jooksvat saldot ja hiljutisi tehinguid." 
+                        FontSize="16" 
+                        TextColor="#B0B0B0" />
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+        </Frame>
+
+        <Frame CornerRadius="10" Padding="10" BackgroundColor="Black">
+            <HorizontalStackLayout>
+                <Image Source="money.png"
+                       HeightRequest="50"
+                       WidthRequest="50"
+                       Margin="0,0,10,0" />
+                <VerticalStackLayout>
+                    <Label 
+                        Text="Miks ma ei saa rakendusse sisse logida?" 
+                        FontSize="20" 
+                        FontAttributes="Bold" 
+                        TextColor="White" />
+                    <Label 
+                        Text="Kontrolli, kas sisestasid õige kasutajanime ja parooli. Kui probleem püsib, proovi parool taastada või uuenda rakendus." 
+                        FontSize="16" 
+                        TextColor="#B0B0B0" />
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+        </Frame>
+
+        <Frame CornerRadius="10" Padding="10" BackgroundColor="Black">
+            <HorizontalStackLayout>
+                <Image Source="money.png"
+                       HeightRequest="50"
+                       WidthRequest="50"
+                       Margin="0,0,10,0" />
+                <VerticalStackLayout>
+                    <Label 
+                        Text="Kuidas ma saan rakendust värskendada?" 
+                        FontSize="20" 
+                        FontAttributes="Bold" 
+                        TextColor="White" />
+                    <Label 
+                        Text="Kontrolli oma seadme rakenduste poodi ja veendu, et kasutad rakenduse kõige uuemat versiooni." 
+                        FontSize="16" 
+                        TextColor="#B0B0B0" />
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+        </Frame>
+
+        <!-- Tagasi avalehele nupp -->
+        <Button 
+            Text="Tagasi avalehele" 
+            FontSize="18" 
+            BackgroundColor="#444444" 
+            TextColor="White" 
+            CornerRadius="20" 
+            WidthRequest="200" 
+            HorizontalOptions="Center" 
+            Command="{Binding NavigateToMainPageCommand}" />
     </VerticalStackLayout>
 </ContentPage>
