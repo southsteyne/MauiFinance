@@ -10,20 +10,20 @@
 
             <!-- Rakenduse logo -->
             <Image
-                Source="mainpage.png"
+                Source="profile.png"
                 HeightRequest="185"
                 Aspect="AspectFit" />
 
             <!-- Tervitus ja kirjeldus -->
             <Label
-                Text="Tere tulemast!"
+                Text="John Doe"
                 FontSize="24"
                 FontAttributes="Bold"
                 SemanticProperties.HeadingLevel="Level1"
                 HorizontalOptions="Center" />
 
             <Label
-                Text="Finants app - Lihtne viis säästa!"
+                Text="johndoe@gmail.com"
                 FontSize="18"
                 SemanticProperties.HeadingLevel="Level2"
                 SemanticProperties.Description="Welcome to dot net Multi platform App UI"
@@ -31,7 +31,7 @@
 
             <!-- Konto saldo -->
             <Label
-                Text="Kontode Saldo"
+                Text="Konto Saldo"
                 FontSize="20"
                 HorizontalOptions="Center" />
 
@@ -69,6 +69,13 @@
                 </CollectionView.ItemTemplate>
             </CollectionView>
 
+            <!-- Edasi FAQ nupp -->
+            <Button
+                Text="Edasi (FAQ)"
+                BackgroundColor="Gray"
+                TextColor="White"
+                Clicked="OnNavigateForwardClicked" />
+
             <!-- Tagasi liikumise nupp -->
             <Button
                 Text="Tagasi"
@@ -76,12 +83,7 @@
                 TextColor="White"
                 Clicked="OnNavigateBackClicked" />
 
-            <!-- Edasi FAQ nupp -->
-            <Button
-                Text="Edasi (FAQ)"
-                BackgroundColor="Green"
-                TextColor="White"
-                Clicked="OnNavigateForwardClicked" />
+            
 
         </VerticalStackLayout>
     </ScrollView>
