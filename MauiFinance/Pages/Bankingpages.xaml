@@ -44,14 +44,14 @@
             TextColor="White" />
 
         <Button
-            Text="Mine Profiilile"
+            Text="Edasi Profiilile"
             BackgroundColor="Gray"
             TextColor="White"
             Clicked="OnNavigateToProfilePageClicked" />
 
 
         <Button
-            Text="Eelmine leht (Main Page)"
+            Text="Tagasi"
             BackgroundColor="Gray"
             TextColor="White"
             Clicked="OnNavigateToMainPageClicked" />
