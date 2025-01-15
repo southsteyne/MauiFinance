@@ -1,12 +1,89 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Pages.Profile"
+             x:Class="MauiFinance.Profile"
+             BackgroundColor="Black"
              Title="Profile">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30,0" Spacing="25">
+
+            <!-- Rakenduse logo -->
+            <Image
+                Source="mainpage.png"
+                HeightRequest="185"
+                Aspect="AspectFit" />
+
+            <!-- Tervitus ja kirjeldus -->
+            <Label
+                Text="Tere tulemast!"
+                FontSize="24"
+                FontAttributes="Bold"
+                SemanticProperties.HeadingLevel="Level1"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Finants app - Lihtne viis säästa!"
+                FontSize="18"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App UI"
+                HorizontalOptions="Center" />
+
+            <!-- Konto saldo -->
+            <Label
+                Text="Kontode Saldo"
+                FontSize="20"
+                HorizontalOptions="Center" />
+
+            <Label
+                x:Name="lblAccountBalance"
+                Text="0.00 €"
+                FontSize="22"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                TextColor="Green" />
+
+            <!-- Hiljutised Tehingud -->
+            <Label
+                Text="Hiljutised Tehingud"
+                FontSize="20"
+                HorizontalOptions="Center"
+                Margin="0,20,0,10" />
+
+            <CollectionView
+                x:Name="transactionsCollection"
+                ItemsSource="{Binding RecentTransactions}"
+                HeightRequest="200"
+                VerticalScrollBarVisibility="Always">
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame Padding="10" Margin="5" BorderColor="Gray" CornerRadius="10">
+                            <StackLayout>
+                                <Label Text="{Binding Description}" FontAttributes="Bold" />
+                                <Label Text="{Binding Date}" FontSize="12" TextColor="Gray" />
+                                <Label Text="{Binding Amount, StringFormat='{}{0:C}'}" FontSize="16" FontAttributes="Italic" />
+                            </StackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            <!-- Tagasi liikumise nupp -->
+            <Button
+                Text="Tagasi"
+                BackgroundColor="Gray"
+                TextColor="White"
+                Clicked="OnNavigateBackClicked" />
+
+            <!-- Edasi FAQ nupp -->
+            <Button
+                Text="Edasi (FAQ)"
+                BackgroundColor="Green"
+                TextColor="White"
+                Clicked="OnNavigateForwardClicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
 </ContentPage>

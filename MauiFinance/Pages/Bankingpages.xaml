@@ -44,10 +44,11 @@
             TextColor="White" />
 
         <Button
-            Text="Järgmine leht (Final Page)"
+            Text="Mine Profiilile"
             BackgroundColor="Gray"
             TextColor="White"
-            Clicked="OnNavigateToFinalPageClicked" />
+            Clicked="OnNavigateToProfilePageClicked" />
+
 
         <Button
             Text="Eelmine leht (Main Page)"
