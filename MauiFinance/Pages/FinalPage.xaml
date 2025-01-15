@@ -17,7 +17,7 @@
         <!-- Küsimused ja vastused koos rahaga pildiga vasakul -->
         <Frame CornerRadius="10" Padding="10" BackgroundColor="Black">
             <HorizontalStackLayout>
-                <Image Source="money.png"
+                <Image Source="gear.png"
                        HeightRequest="50"
                        WidthRequest="50"
                        Margin="0,0,10,0" />
@@ -37,7 +37,7 @@
 
         <Frame CornerRadius="10" Padding="10" BackgroundColor="Black">
             <HorizontalStackLayout>
-                <Image Source="money.png"
+                <Image Source="gear.png"
                        HeightRequest="50"
                        WidthRequest="50"
                        Margin="0,0,10,0" />
@@ -57,7 +57,7 @@
 
         <Frame CornerRadius="10" Padding="10" BackgroundColor="Black">
             <HorizontalStackLayout>
-                <Image Source="money.png"
+                <Image Source="gear.png"
                        HeightRequest="50"
                        WidthRequest="50"
                        Margin="0,0,10,0" />
@@ -77,7 +77,7 @@
 
         <Frame CornerRadius="10" Padding="10" BackgroundColor="Black">
             <HorizontalStackLayout>
-                <Image Source="money.png"
+                <Image Source="gear.png"
                        HeightRequest="50"
                        WidthRequest="50"
                        Margin="0,0,10,0" />
@@ -97,7 +97,7 @@
 
         <Frame CornerRadius="10" Padding="10" BackgroundColor="Black">
             <HorizontalStackLayout>
-                <Image Source="money.png"
+                <Image Source="gear.png"
                        HeightRequest="50"
                        WidthRequest="50"
                        Margin="0,0,10,0" />
@@ -117,7 +117,7 @@
 
         <Frame CornerRadius="10" Padding="10" BackgroundColor="Black">
             <HorizontalStackLayout>
-                <Image Source="money.png"
+                <Image Source="gear.png"
                        HeightRequest="50"
                        WidthRequest="50"
                        Margin="0,0,10,0" />
