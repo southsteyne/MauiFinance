@@ -13,7 +13,7 @@
             TextColor="White" />
 
         <Image
-            Source="https://e7.pngegg.com/pngimages/94/517/png-clipart-money-bag-emoji-fly-angle-rectangle.png"
+            Source="money.png"
             HorizontalOptions="Center"
             WidthRequest="150"
             HeightRequest="150" />
